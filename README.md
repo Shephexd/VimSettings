@@ -67,23 +67,24 @@ http://cocopon.me/app/vim-color-gallery/
 
 - 'mattn/emmet-vim' - *expanding abbreviations* [link](https://github.com/mattn/emmet-vim)
 
-  ​
-
+- 'majutsushi/tagbar' - *tagbar* [link](https://github.com/majutsushi/tagbar)
 
 #### Commands
 
-**syntax check** :  `F7`
+**syntax check** :  `F7`  
+**show tree** : `Ctrl+n`  
+**show tags** : `Ctrl+m`  
+**Folding** : `space`  
+**Display move** : `Ctrl+h,j,k,l`  
 
-**show tree** : `Ctrl+n`
 
-**Folding** : `space`
-
-
-
-#### Errors
+#### Issues
 
 ![vim_screenshot](https://github.com/Shephexd/settings/blob/demo/vim_screenshot.png)
 
 *To solve `value Error:unkown locale: UTF-8`*
 
 `export LC_ALL=en_US.UTF-8` and `export LANG=en_US.UTF-8`
+
+*Tagbar : Ctags doesn't seem to be Exuberant Ctags!
+`brew install ctags`

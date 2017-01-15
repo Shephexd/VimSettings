@@ -13,6 +13,8 @@ Plugin  'jistr/vim-nerdtree-tabs'
 Plugin 'scrooloose/nerdcommenter'
 Plugin 'Lokaltog/powerline', {'rtp': 'powerline/bindings/vim/'}
 Plugin 'mattn/emmet-vim'
+Plugin 'majutsushi/tagbar'
+
 call vundle#end()            
 
 filetype plugin indent on " Put your non-Plugin stuff after this line
@@ -69,7 +71,9 @@ set foldlevel=99
 " Enable folding with the spacebar
 nnoremap <space> za
 
-
+" Tagbar
+nmap <C-m> :TagbarToggle<CR>
+let g:tagbar_width = 35
 
 " NERD_tree config
 let NERDTreeChDirMode=2
@@ -79,6 +83,7 @@ let NERDTreeShowBookmarks=1
 map <C-n> :NERDTreeToggle<CR>
 let g:NERDTreeDirArrowExpandable = '▸'
 let g:NERDTreeDirArrowCollapsible = '▾'
+let g:NERDTreeWinSize=30
 
 
 "Flake auto
