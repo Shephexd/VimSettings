@@ -12,22 +12,32 @@ settings i used for development environments
 
 
 
+#### color themes
+
+http://cocopon.me/app/vim-color-gallery/
+
+
+
 #### Plugins
 
-- 'gmarik/Vundle.vim' "required - *For plugin install*
+- 'gmarik/Vundle.vim' "required - *For plugin install* 'tpope/vim-fugitive' "required - *For Git*
 
 
-- 'tpope/vim-fugitive' "required - *For Git*
+- 'tmhedberg/SimpylFold' - *Folding* [link](https://github.com/tmhedberg/SimpylFold)
 
+- 'nvie/vim-flake8' - *Syntax check* [link](https://github.com/nvie/vim-flake8)
 
-- 'tmhedberg/SimpylFold' - *Folding*
-- 'nvie/vim-flake8' - *Syntax check*
-- 'scrooloose/nerdtree' - *directory tree*
-- 'jistr/vim-nerdtree-tabs' - *directory tree*
--  'scrooloose/nerdcommenter' - *directory tree*
--  'Lokaltog/powerline', {'rtp': 'powerline/bindings/vim/'} - *below status bar*
-- 'mattn/emmet-vim' - *expanding abbreviations*
+- 'scrooloose/nerdtree' - *directory tree* [link](https://github.com/scrooloose/nerdtree)
 
+- 'jistr/vim-nerdtree-tabs' - *directory tree* [link](jistr/vim-nerdtree-tabs)
+
+- 'scrooloose/nerdcommenter' - *directory tree* [link](https://github.com/scrooloose/nerdcommenter)
+
+- 'Lokaltog/powerline', {'rtp': 'powerline/bindings/vim/'} - *below status bar* [link](https://github.com/Lokaltog/vim-powerline)
+
+- 'mattn/emmet-vim' - *expanding abbreviations* [link](https://github.com/mattn/emmet-vim)
+
+  ​
 
 
 #### Commands
