@@ -12,6 +12,28 @@ settings i used for development environments
 
 
 
+#### Directories
+
+- `~/.vimrc`  - *setting file*
+
+- `~/.vim/bundle/Vundle.vim`   - *Bundle file*
+
+- `~/.vim/colors/` - *Color themes*
+
+  ​
+
+#### Install guide
+
+`$ git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim` - *git vundle install*
+
+
+
+**Install command** : `:PluginInstall` in .vimrc
+
+![vim_PluginInstall](vim_PluginInstall.png)
+
+
+
 #### color themes
 
 http://cocopon.me/app/vim-color-gallery/
@@ -20,7 +42,8 @@ http://cocopon.me/app/vim-color-gallery/
 
 #### Plugins
 
-- 'gmarik/Vundle.vim' "required - *For plugin install* 'tpope/vim-fugitive' "required - *For Git*
+- 'gmarik/Vundle.vim' "required - *For plugin install* [link](https://github.com/gmarik/Vundle.vim.git )
+- 'tpope/vim-fugitive' "required - *For Git* [link](https://github.com/tpope/vim-fugitive)
 
 
 - 'tmhedberg/SimpylFold' - *Folding* [link](https://github.com/tmhedberg/SimpylFold)
@@ -42,8 +65,6 @@ http://cocopon.me/app/vim-color-gallery/
 
 #### Commands
 
-**Install command** : `:PluginInstall`
-
 **syntax check** :  `F7`
 
 **show tree** : `Ctrl+n`
@@ -51,6 +72,8 @@ http://cocopon.me/app/vim-color-gallery/
 **Folding** : `space`
 
 
+
+#### Errors
 
 ![vim_screenshot](vim_screenshot.png)
 
