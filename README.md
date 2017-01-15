@@ -6,6 +6,8 @@ settings i used for development environments
 
 ### VIM setting files
 
+![vim_demo](https://github.com/Shephexd/settings/blob/demo/vim_demo.gif)
+
 - .vimrc
 - colors(molokai) from [`https://github.com/tomasr/molokai`](https://github.com/tomasr/molokai)
 
