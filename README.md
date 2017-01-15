@@ -11,14 +11,16 @@ settings i used for development environments
 
 
 #### DEMO and Install guide
+
 ![vim_demo](https://github.com/Shephexd/settings/blob/demo/vim_demo.gif)
 
-`$ git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim` - *git vundle install*
-`$ git clone https://github.com/shephexd/settings.git`
-`$ mv settings/vim/colors/ ~/.vim/` - *Theme setting*
-`$ mv settings/vim/vimrc ~/.vimrc`- *vim setting file*
-`$ vi ~/.vimrc`
-`:PluginInstall` *In the vim*
+`$ git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim` - *git vundle install*  
+`$ git clone https://github.com/shephexd/settings.git`  
+`$ mv settings/vim/colors/ ~/.vim/` - *Theme setting*  
+`$ mv settings/vim/vimrc ~/.vimrc`- *vim setting file*  
+`$ vi ~/.vimrc`  
+`:PluginInstall` *In the vim*  
+
 
 
 #### Directories
