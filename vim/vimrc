@@ -14,6 +14,7 @@ Plugin 'scrooloose/nerdcommenter'
 Plugin 'Lokaltog/powerline', {'rtp': 'powerline/bindings/vim/'}
 Plugin 'mattn/emmet-vim'
 Plugin 'majutsushi/tagbar'
+Plugin 'kien/ctrlp.vim'
 
 call vundle#end()            
 

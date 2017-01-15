@@ -2,8 +2,6 @@
 
 settings i used for development environments
 
-
-
 ### VIM setting files
 
 - .vimrc
@@ -69,14 +67,19 @@ http://cocopon.me/app/vim-color-gallery/
 
 - 'majutsushi/tagbar' - *tagbar* [link](https://github.com/majutsushi/tagbar)
 
+- 'kien/ctrlp.vim' - *File searching* [link](https://github.com/ctrlpvim/ctrlp.vim)
+ 
 #### Commands
 
 **syntax check** :  `F7`  
 **show tree** : `Ctrl+n`  
-**show tags** : `Ctrl+m`  
+**show tags** : `Enter`  
 **Folding** : `space`  
 **Display move** : `Ctrl+h,j,k,l`  
-
+**Searching** : `Ctrl+p`  
+**Split Horizontal** : `:vs`  
+**Split Vertical** : `:sv`  
+ 
 
 #### Issues
 
