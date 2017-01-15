@@ -6,12 +6,19 @@ settings i used for development environments
 
 ### VIM setting files
 
-![vim_demo](https://github.com/Shephexd/settings/blob/demo/vim_demo.gif)
-
 - .vimrc
 - colors(molokai) from [`https://github.com/tomasr/molokai`](https://github.com/tomasr/molokai)
 
 
+#### DEMO and Install guide
+![vim_demo](https://github.com/Shephexd/settings/blob/demo/vim_demo.gif)
+
+`$ git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim` - *git vundle install*
+`$ git clone https://github.com/shephexd/settings.git`
+`$ mv settings/vim/colors/ ~/.vim/` - *Theme setting*
+`$ mv settings/vim/vimrc ~/.vimrc`- *vim setting file*
+`$ vi ~/.vimrc`
+`:PluginInstall` *In the vim*
 
 
 #### Directories
@@ -24,15 +31,11 @@ settings i used for development environments
 
   ​
 
-#### Install guide
-
-`$ git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim` - *git vundle install*
-
 
 
 **Install command** : `:PluginInstall` in .vimrc
 
-![vim_PluginInstall](vim_PluginInstall.png)
+![vim_PluginInstall](https://github.com/Shephexd/settings/blob/demo/vim_PluginInstall.png)
 
 
 
@@ -77,7 +80,7 @@ http://cocopon.me/app/vim-color-gallery/
 
 #### Errors
 
-![vim_screenshot](vim_screenshot.png)
+![vim_screenshot](https://github.com/Shephexd/settings/blob/demo/vim_screenshot.png)
 
 *To solve `value Error:unkown locale: UTF-8`*
 
