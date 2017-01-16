@@ -7,6 +7,7 @@ settings i used for development environments
 - .vimrc
 - colors(molokai) from [`https://github.com/tomasr/molokai`](https://github.com/tomasr/molokai)
 
+![vim_screenshot](https://github.com/Shephexd/settings/blob/demo/vim_screenshot.png)
 
 #### DEMO and Install guide
 
@@ -71,10 +72,13 @@ http://cocopon.me/app/vim-color-gallery/
  
 #### Commands
 
-**syntax check** :  `F7`  
-**show tree** : `Ctrl+n`  
-**show tags** : `Enter`  
 **Folding** : `space`  
+
+**Run python** : `F5`
+**python syntax check** :  `F7`  
+**show tags** : `F8`  
+
+**show tree** : `Ctrl+n`  
 **Display move** : `Ctrl+h,j,k,l`  
 **Searching** : `Ctrl+p`  
 **Split Horizontal** : `:vs`  
@@ -83,7 +87,6 @@ http://cocopon.me/app/vim-color-gallery/
 
 #### Issues
 
-![vim_screenshot](https://github.com/Shephexd/settings/blob/demo/vim_screenshot.png)
 
 *To solve `value Error:unkown locale: UTF-8`*
 
