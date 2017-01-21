@@ -7,6 +7,7 @@ call vundle#begin()
 Plugin 'gmarik/Vundle.vim' "required
 Plugin 'tpope/vim-fugitive' "required 
 Plugin 'tmhedberg/SimpylFold'
+Plugin 'nvie/vim-flake8'
 Plugin 'scrooloose/nerdtree'
 Plugin  'jistr/vim-nerdtree-tabs'
 Plugin 'scrooloose/nerdcommenter'
@@ -14,8 +15,9 @@ Plugin 'Lokaltog/powerline', {'rtp': 'powerline/bindings/vim/'}
 Plugin 'mattn/emmet-vim'
 Plugin 'majutsushi/tagbar'
 Plugin 'kien/ctrlp.vim'
-Plugin 'scrooloose/syntastic'
 Plugin 'tpope/vim-markdown'
+Plugin 'davidhalter/jedi-vim'
+Plugin 'ervandew/supertab'
 
 call vundle#end()            
 
@@ -72,7 +74,6 @@ set foldlevel=99
 nnoremap <space> za
 
 " Tagbar
-map <F8> :Tagbar<CR>
 let g:tagbar_width = 35
 
 " NERD_tree config
@@ -81,23 +82,27 @@ let NERDTreeIgnore=['\.vim$', '\~$', '\.pyc$', '\.swp$']
 let NERDTreeSortOrder=['^__\.py$', '\/$', '*', '\.swp$',  '\~$']
 let NERDTreeShowBookmarks=1
 map <C-n> :NERDTreeToggle<CR>
+map <F8> :Tagbar<CR>
 let g:NERDTreeDirArrowExpandable = '▸'
 let g:NERDTreeDirArrowCollapsible = '▾'
 let g:NERDTreeWinSize=30
 
-"Syntastic for syntax checking
-set statusline+=%#warningmsg#
-set statusline+=%{SyntasticStatuslineFlag()}
-set statusline+=%*
 
-let g:syntastic_always_populate_loc_list = 1
-let g:syntastic_auto_loc_list = 1
-let g:syntastic_check_on_open = 1
-let g:syntastic_check_on_wq = 0
+"Flake auto
+"let g:flake8_show_in_file=1   " show
+"let g:flake8_max_markers=20  " maximum # of markers to show(500 is default)
 
+"Python syntax check
+autocmd BufWritePost *.py call Flake8()
 
 "python run code mapping
-au BufRead,BufNewFile *py,*pyw nnoremap <silent> <F5> :!clear;python %<CR> 
+autocmd BufRead *.py nmap <F5> :w<CR>:!clear;python %<CR>
+
+"Jedi vim
+let g:SuperTabDefaultCompletionType = "context"
+let g:jedi#popup_on_dot = 0
+
+
 
 
 "------------Start Python PEP 8 stuff----------------
@@ -142,3 +147,11 @@ autocmd FileType python set foldmethod=indent
 "use space to open folds
 nnoremap <space> za 
 "----------Stop python PEP 8 stuff--------------
+"
+
+"Markdown settings
+autocmd BufNewFile,BufReadPost *.md set filetype=markdown
+
+let g:markdown_fenced_languages = ['html', 'python', 'bash=sh']
+let g:markdown_syntax_conceal = 0
+
