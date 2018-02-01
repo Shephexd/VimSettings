@@ -81,8 +81,8 @@ let NERDTreeChDirMode=2
 let NERDTreeIgnore=['\.vim$', '\~$', '\.pyc$', '\.swp$']
 let NERDTreeSortOrder=['^__\.py$', '\/$', '*', '\.swp$',  '\~$']
 let NERDTreeShowBookmarks=1
-map <C-n> :NERDTreeToggle<CR>
 map <F8> :Tagbar<CR>
+map <F9> :NERDTreeToggle<CR>
 let g:NERDTreeDirArrowExpandable = '▸'
 let g:NERDTreeDirArrowCollapsible = '▾'
 let g:NERDTreeWinSize=30
@@ -144,8 +144,6 @@ set backspace=indent,eol,start
 
 "Folding based on indentation:
 autocmd FileType python set foldmethod=indent
-"use space to open folds
-nnoremap <space> za 
 "----------Stop python PEP 8 stuff--------------
 "
 
